@@ -16,6 +16,8 @@ struct ContentView: View {
     @State private var students = [Student(name: "Harry Potter"), Student(name: "Hermoine Granger"), Student(name: "Ron Weasley")]
     
     @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var wizards: FetchedResults<Wizard>
+    
     var body: some View {
         VStack {
             List{
@@ -29,13 +31,29 @@ struct ContentView: View {
                 Text(student.name)
             }
             
-            Button("Save"){
-                // always while saving we have to check if changes are mafe and then save. this is safer.
-                
-                if moc.hasChanges{
-                    try? moc.save()
+            List(wizards, id: \.self){ wizard in
+                Text(wizard.name ?? "No Name")
+            }
+            HStack{
+                Button("Add Wizard"){
+                    let wizard = Wizard(context: moc)
+                    wizard.name = "Harry Potter"
+                    
                 }
-                
+                Spacer()
+                Button("Save"){
+                    // always while saving we have to check if changes are mafe and then save. this is safer.
+                    
+                    do {
+                        try moc.save()
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+    //                if moc.hasChanges{
+    //                    try? moc.save()
+    //                }
+                    
+                }
             }
         }
         .padding()

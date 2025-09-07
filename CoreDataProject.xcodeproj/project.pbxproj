@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F920A912E6DCEC100C6CEF0 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F920A902E6DCEC100C6CEF0 /* DataController.swift */; };
 		7FCF1B4A2E6D6DD2004546B9 /* CoreDataProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF1B492E6D6DD2004546B9 /* CoreDataProjectApp.swift */; };
 		7FCF1B4C2E6D6DD2004546B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF1B4B2E6D6DD2004546B9 /* ContentView.swift */; };
 		7FCF1B4E2E6D6DD4004546B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FCF1B4D2E6D6DD4004546B9 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F920A902E6DCEC100C6CEF0 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		7FCF1B462E6D6DD2004546B9 /* CoreDataProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FCF1B492E6D6DD2004546B9 /* CoreDataProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectApp.swift; sourceTree = "<group>"; };
 		7FCF1B4B2E6D6DD2004546B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				7FCF1B5B2E6D76F9004546B9 /* Movie+CoreDataProperties.swift */,
 				7FCF1B492E6D6DD2004546B9 /* CoreDataProjectApp.swift */,
 				7FCF1B4B2E6D6DD2004546B9 /* ContentView.swift */,
+				7F920A902E6DCEC100C6CEF0 /* DataController.swift */,
 				7FCF1B572E6D767F004546B9 /* Model.xcdatamodeld */,
 				7FCF1B4D2E6D6DD4004546B9 /* Assets.xcassets */,
 				7FCF1B4F2E6D6DD4004546B9 /* Preview Content */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FCF1B5C2E6D76F9004546B9 /* Movie+CoreDataClass.swift in Sources */,
+				7F920A912E6DCEC100C6CEF0 /* DataController.swift in Sources */,
 				7FCF1B5D2E6D76F9004546B9 /* Movie+CoreDataProperties.swift in Sources */,
 				7FCF1B4C2E6D6DD2004546B9 /* ContentView.swift in Sources */,
 				7FCF1B4A2E6D6DD2004546B9 /* CoreDataProjectApp.swift in Sources */,

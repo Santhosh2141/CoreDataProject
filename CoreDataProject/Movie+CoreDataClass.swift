@@ -1,15 +1,15 @@
+////
+////  Movie+CoreDataClass.swift
+////  CoreDataProject
+////
+////  Created by Santhosh Srinivas on 07/09/25.
+////
+////
 //
-//  Movie+CoreDataClass.swift
-//  CoreDataProject
+//import Foundation
+//import CoreData
 //
-//  Created by Santhosh Srinivas on 07/09/25.
+//@objc(Movie)
+//public class Movie: NSManagedObject {
 //
-//
-
-import Foundation
-import CoreData
-
-@objc(Movie)
-public class Movie: NSManagedObject {
-
-}
+//}
