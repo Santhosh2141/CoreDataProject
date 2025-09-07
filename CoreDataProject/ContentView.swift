@@ -14,6 +14,8 @@ struct ContentView: View {
     
     // Saving hashvalues will be a problem. cuz when we close and open again hashvalue might be changed and will cause problems
     @State private var students = [Student(name: "Harry Potter"), Student(name: "Hermoine Granger"), Student(name: "Ron Weasley")]
+    
+    @Environment(\.managedObjectContext) var moc
     var body: some View {
         VStack {
             List{
@@ -25,6 +27,15 @@ struct ContentView: View {
             // id self will work ww Hashable data only. string ints are hashable by default
             List(students, id: \.self){ student in
                 Text(student.name)
+            }
+            
+            Button("Save"){
+                // always while saving we have to check if changes are mafe and then save. this is safer.
+                
+                if moc.hasChanges{
+                    try? moc.save()
+                }
+                
             }
         }
         .padding()

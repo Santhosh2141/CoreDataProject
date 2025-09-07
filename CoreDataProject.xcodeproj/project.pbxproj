@@ -11,6 +11,9 @@
 		7FCF1B4C2E6D6DD2004546B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF1B4B2E6D6DD2004546B9 /* ContentView.swift */; };
 		7FCF1B4E2E6D6DD4004546B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FCF1B4D2E6D6DD4004546B9 /* Assets.xcassets */; };
 		7FCF1B512E6D6DD4004546B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FCF1B502E6D6DD4004546B9 /* Preview Assets.xcassets */; };
+		7FCF1B592E6D767F004546B9 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF1B572E6D767F004546B9 /* Model.xcdatamodeld */; };
+		7FCF1B5C2E6D76F9004546B9 /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF1B5A2E6D76F9004546B9 /* Movie+CoreDataClass.swift */; };
+		7FCF1B5D2E6D76F9004546B9 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF1B5B2E6D76F9004546B9 /* Movie+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		7FCF1B4B2E6D6DD2004546B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7FCF1B4D2E6D6DD4004546B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FCF1B502E6D6DD4004546B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7FCF1B582E6D767F004546B9 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		7FCF1B5A2E6D76F9004546B9 /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7FCF1B5B2E6D76F9004546B9 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,11 @@
 		7FCF1B482E6D6DD2004546B9 /* CoreDataProject */ = {
 			isa = PBXGroup;
 			children = (
+				7FCF1B5A2E6D76F9004546B9 /* Movie+CoreDataClass.swift */,
+				7FCF1B5B2E6D76F9004546B9 /* Movie+CoreDataProperties.swift */,
 				7FCF1B492E6D6DD2004546B9 /* CoreDataProjectApp.swift */,
 				7FCF1B4B2E6D6DD2004546B9 /* ContentView.swift */,
+				7FCF1B572E6D767F004546B9 /* Model.xcdatamodeld */,
 				7FCF1B4D2E6D6DD4004546B9 /* Assets.xcassets */,
 				7FCF1B4F2E6D6DD4004546B9 /* Preview Content */,
 			);
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FCF1B5C2E6D76F9004546B9 /* Movie+CoreDataClass.swift in Sources */,
+				7FCF1B5D2E6D76F9004546B9 /* Movie+CoreDataProperties.swift in Sources */,
 				7FCF1B4C2E6D6DD2004546B9 /* ContentView.swift in Sources */,
 				7FCF1B4A2E6D6DD2004546B9 /* CoreDataProjectApp.swift in Sources */,
+				7FCF1B592E6D767F004546B9 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +351,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7FCF1B572E6D767F004546B9 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7FCF1B582E6D767F004546B9 /* Model.xcdatamodel */,
+			);
+			currentVersion = 7FCF1B582E6D767F004546B9 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7FCF1B3E2E6D6DD2004546B9 /* Project object */;
 }
