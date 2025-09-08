@@ -15,7 +15,11 @@ struct DynamicFilteringView: View {
     // we cant use @FetchRequests as we have to update it based on another value. Based on the changed state value. this will affect the fetch req value outside. so we have to initialise it inside the view. so we create a new view
     var body: some View {
         VStack{
-            FilteredList(filter: lastNameFilter)
+            FilteredList(filterKey: "lastName", filterValue: lastNameFilter){ (singer: Singer) in
+                // this is an NSManagedObject and not a singer object. so we tell that its a singer class
+                Text("\(singer.wrappedFirstName) \(singer.wrappedLastName)")
+            }
+            
             Button("Add Example"){
                 let taylor =  Singer(context: moc)
                 taylor.firstName = "Taylor"
