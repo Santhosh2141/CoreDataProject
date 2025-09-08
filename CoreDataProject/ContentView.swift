@@ -83,6 +83,10 @@ struct ContentView: View {
                     NavigationLink("Go to Dynamic Filtering View"){
                         DynamicFilteringView()
                     }
+                    Spacer()
+                    NavigationLink("Go to Relationship View"){
+                        RelationshipView()
+                    }
                 }
             }
             .padding()
