@@ -15,6 +15,10 @@
 		7FCF1B592E6D767F004546B9 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF1B572E6D767F004546B9 /* Model.xcdatamodeld */; };
 		7FCF1B5C2E6D76F9004546B9 /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF1B5A2E6D76F9004546B9 /* Movie+CoreDataClass.swift */; };
 		7FCF1B5D2E6D76F9004546B9 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCF1B5B2E6D76F9004546B9 /* Movie+CoreDataProperties.swift */; };
+		7FE6EB832E6F08BA00351980 /* Singer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE6EB812E6F08BA00351980 /* Singer+CoreDataClass.swift */; };
+		7FE6EB842E6F08BA00351980 /* Singer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE6EB822E6F08BA00351980 /* Singer+CoreDataProperties.swift */; };
+		7FE6EB862E6F092400351980 /* DynamicFilteringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE6EB852E6F092400351980 /* DynamicFilteringView.swift */; };
+		7FE6EB882E6F0AF300351980 /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE6EB872E6F0AF300351980 /* FilteredList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		7FCF1B582E6D767F004546B9 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		7FCF1B5A2E6D76F9004546B9 /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7FCF1B5B2E6D76F9004546B9 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7FE6EB812E6F08BA00351980 /* Singer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7FE6EB822E6F08BA00351980 /* Singer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7FE6EB852E6F092400351980 /* DynamicFilteringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFilteringView.swift; sourceTree = "<group>"; };
+		7FE6EB872E6F0AF300351980 /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +69,12 @@
 			children = (
 				7FCF1B5A2E6D76F9004546B9 /* Movie+CoreDataClass.swift */,
 				7FCF1B5B2E6D76F9004546B9 /* Movie+CoreDataProperties.swift */,
+				7FE6EB812E6F08BA00351980 /* Singer+CoreDataClass.swift */,
+				7FE6EB822E6F08BA00351980 /* Singer+CoreDataProperties.swift */,
 				7FCF1B492E6D6DD2004546B9 /* CoreDataProjectApp.swift */,
 				7FCF1B4B2E6D6DD2004546B9 /* ContentView.swift */,
+				7FE6EB852E6F092400351980 /* DynamicFilteringView.swift */,
+				7FE6EB872E6F0AF300351980 /* FilteredList.swift */,
 				7F920A902E6DCEC100C6CEF0 /* DataController.swift */,
 				7FCF1B572E6D767F004546B9 /* Model.xcdatamodeld */,
 				7FCF1B4D2E6D6DD4004546B9 /* Assets.xcassets */,
@@ -149,11 +161,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FE6EB832E6F08BA00351980 /* Singer+CoreDataClass.swift in Sources */,
 				7FCF1B5C2E6D76F9004546B9 /* Movie+CoreDataClass.swift in Sources */,
+				7FE6EB882E6F0AF300351980 /* FilteredList.swift in Sources */,
 				7F920A912E6DCEC100C6CEF0 /* DataController.swift in Sources */,
 				7FCF1B5D2E6D76F9004546B9 /* Movie+CoreDataProperties.swift in Sources */,
 				7FCF1B4C2E6D6DD2004546B9 /* ContentView.swift in Sources */,
+				7FE6EB842E6F08BA00351980 /* Singer+CoreDataProperties.swift in Sources */,
 				7FCF1B4A2E6D6DD2004546B9 /* CoreDataProjectApp.swift in Sources */,
+				7FE6EB862E6F092400351980 /* DynamicFilteringView.swift in Sources */,
 				7FCF1B592E6D767F004546B9 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
